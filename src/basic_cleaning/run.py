@@ -56,6 +56,15 @@ def go(args):
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description="A very basic data cleaning")
+    """
+    parse the args for:
+    input_artifact: the data instantiated from a WandB artifact to be cleaned
+    output_artifact: the WandB artifact created from this pipeline
+    output_type: the WandB artifact type for the output_artifact
+    output_description: the WandB artifact description for the output_artifact
+    min_price: the minimum rental price to be considered in our dataset
+    max_price: the maximum rental price to be considered in our dataset
+    """
   
     parser.add_argument(
         "--input_artifact", 
