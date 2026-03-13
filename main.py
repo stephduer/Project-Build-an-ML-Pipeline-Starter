@@ -55,10 +55,10 @@ def go(config: DictConfig):
                "main",
                env_manager="conda",
                parameters={
-                   "input_artifact": "sample.csv:latest",
-                   "output_artifact": "clean_sample.csv",
-                   "output_type": "clean_sample",
-                   "output_description": "Cleaned version of sample.csv",
+                   "input_artifact": config["basic_cleaning"]["input_artifact"],
+                   "output_artifact": config["basic_cleaning"]["output_artifact"],
+                   "output_type": config["basic_cleaning"]["output_type"],
+                   "output_description": config["basic_cleaning"]["output_description"],
                    "min_price": float(config["etl"]["min_price"]),
                    "max_price": float(config["etl"]["max_price"])
                }
