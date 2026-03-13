@@ -25,6 +25,9 @@ modeling:
   max_tfidf_features: 5
   # NOTE: you can put here any parameter that is accepted by the constructor of
   # RandomForestRegressor. This is a subsample, but more could be added:
+
+  #NB: updated parameters n_estimators and max_depth from their original values per step 6
+  
   random_forest:
     n_estimators: 200
     max_depth: 50
